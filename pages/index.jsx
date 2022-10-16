@@ -2,10 +2,10 @@ import PageShell from 'components/page-shell';
 
 export default function Home() {
 	const srcs = [
-		'/images/next-monster0.png',
-		'/images/next-monster2.png',
-		'/images/next-monster3.png',
-		'/images/next-monster4.png',
+		'/static/images/nextjs-monster.jpeg',
+		'/static/images/nextjs-monster2.jpeg',
+		'/static/images/next-monster3.png',
+		'/static/images/next-monster4.png',
 	];
 
 	const randomIndex = Math.floor(Math.random() * srcs.length);

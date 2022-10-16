@@ -1,7 +1,7 @@
 export const menuItems = [
 	{
 		href: '/',
-		title: 'Homepage',
+		title: 'Next.js Monster',
 	},
 	{
 		href: '/scripts-demo',
