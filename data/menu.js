@@ -16,17 +16,9 @@ export const menuItems = [
 				title: 'afterInteractive',
 			},
 			{
-				href: '/scripts-demo/lazy-load',
+				href: '/scripts-demo/lazy-on-load',
 				title: 'lazyOnLoad',
 			},
 		],
-	},
-	{
-		href: '/about',
-		title: 'About',
-	},
-	{
-		href: '/contact',
-		title: 'Contact',
 	},
 ];

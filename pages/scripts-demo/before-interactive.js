@@ -1,7 +1,9 @@
 import { Prism } from '@mantine/prism';
 import PageShell from 'components/page-shell';
 
-const demoCode = `	
+const demoCode = `
+import Script from 'next/script';
+
 <Html>
   <Head />
   <body>
@@ -24,10 +26,15 @@ export default function BeforeInteractive() {
 				the script will load when any page in the application has been loaded
 				server-side).
 			</p>
-			<p>
+			<p className="mb-2">
 				Scripts using this strategy should be placed inside `_document.js`. If
 				placed in a component, the timing and ordering of the script loading is
 				not guaranteed
+			</p>
+			<p className="mb-2">
+				Scripts that you would normally load in the head should use{' '}
+				<code language="markdown">beforeInteractive</code>, such as Polyfills,
+				device detecting script.
 			</p>
 		</>
 	);
@@ -36,7 +43,9 @@ export default function BeforeInteractive() {
 			<div>
 				{' '}
 				{text}
-				<p>Sample Code</p>
+				<p>
+					<strong>Sample Code</strong>
+				</p>
 				<div className="m-5">
 					<Prism
 						colorScheme="dark"

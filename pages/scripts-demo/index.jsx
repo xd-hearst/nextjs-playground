@@ -1,7 +1,8 @@
+import PageShell from 'components/page-shell';
+
 export default function Home() {
 	return (
-		<div className="flex h-full flex-col p-5">
-			<h1 className="text-4xl mb-5 font-bold">Next Script Demo</h1>
+		<PageShell title="Next Script Demo">
 			<div className="text-2xl">
 				There are four loading strategies for Next Js.
 			</div>
@@ -16,6 +17,6 @@ export default function Home() {
 					<a>lazyLoaagd</a>
 				</p>
 			</div>
-		</div>
+		</PageShell>
 	);
 }

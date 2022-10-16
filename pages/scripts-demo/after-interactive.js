@@ -1,38 +1,32 @@
 import { Prism } from '@mantine/prism';
+import PageShell from 'components/page-shell';
+import Script from 'next/script';
 
 const demoCode = `	
-<Html>
-  <Head />
-  <body>
-    <Main />
-    <NextScript />
-    <Script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      strategy="beforeInteractive"
-    ></Script>
-  </body>
-  </Html>
+	// code omitted for brevity
+	<>
+		<Script src="https://www.google-analytics.com/analytics.js" />
+	</>
   `;
 
 export default function AfterInteractive() {
 	const text = (
 		<>
 			<p className="mb-2">
-				Used for critical scripts. This strategy only works inside _document.js
-				and is designed to load scripts that are needed by the entire site (i.e.
-				the script will load when any page in the application has been loaded
-				server-side).
+				<code class="language-markdown">afterInteractive</code> strategy are
+				injected client-side. It runs after Next.js hydrates the page and is
+				injected into the bottom of
+				<code class="language-markdown">body</code>. This is the default mode
+				for Next Script.
 			</p>
-			<p>
-				Scripts using this strategy should be placed inside `_document.js`. If
-				placed in a component, the timing and ordering of the script loading is
-				not guaranteed
+			<p className="mb-2">
+				Third party scripts such as ads, google analytics should be good
+				candidates for this strategy
 			</p>
 		</>
 	);
 	return (
-		<div className="flex h-full flex-col p-5">
-			<h1 className="text-2xl mb-5 font-bold">beforeInteractive</h1>
+		<PageShell title="afterInteractive">
 			<div>
 				{' '}
 				{text}
@@ -48,6 +42,7 @@ export default function AfterInteractive() {
 					</Prism>
 				</div>
 			</div>
-		</div>
+			<Script src="https://www.google-analytics.com/analytics.js" />
+		</PageShell>
 	);
 }
