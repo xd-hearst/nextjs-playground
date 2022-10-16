@@ -9,9 +9,6 @@ export default function NextScriptTest() {
 						src="https://static01.nyt.com/images/2022/10/18/science/14tb-sarcastic-fringehead-vid-image/14tb-sarcastic-fringehead-vid-image-superJumbo.jpg"
 						alt="Cinemagraph"
 					/>
-					<a class="twitter-timeline" href="https://twitter.com/TwitterDev">
-						Tweets by TwitterDev
-					</a>
 					<Script src="//platform.twitter.com/widgets.js" />
 					<Script src="https://www.google-analytics.com/analytics.js" />
 					<p>
