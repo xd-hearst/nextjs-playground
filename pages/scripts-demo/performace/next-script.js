@@ -9,6 +9,8 @@ export default function NextScriptTest() {
 						src="https://static01.nyt.com/images/2022/10/18/science/14tb-sarcastic-fringehead-vid-image/14tb-sarcastic-fringehead-vid-image-superJumbo.jpg"
 						alt="Cinemagraph"
 					/>
+					<Script src="//platform.twitter.com/widgets.js" />
+					<Script src="https://www.google-analytics.com/analytics.js" />
 					<p>
 						Fusce pharetra ligula id arcu semper, ac laoreet risus pretium.
 						Morbi vitae mi quis urna cursus ultricies. Aliquam varius tristique
@@ -47,7 +49,6 @@ export default function NextScriptTest() {
 					></video>
 				</div>
 			</div>
-			<Script src="https://www.google-analytics.com/analytics.js" />
 		</>
 	);
 }
