@@ -13,7 +13,7 @@ export default function Home() {
 					<a>afterInteractive</a>
 				</p>
 				<p>
-					<a>lazyLoad</a>
+					<a>lazyLoaagd</a>
 				</p>
 			</div>
 		</div>

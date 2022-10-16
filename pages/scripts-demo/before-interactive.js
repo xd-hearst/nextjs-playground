@@ -1,4 +1,5 @@
 import { Prism } from '@mantine/prism';
+import PageShell from 'components/page-shell';
 
 const demoCode = `	
 <Html>
@@ -31,8 +32,7 @@ export default function BeforeInteractive() {
 		</>
 	);
 	return (
-		<div className="flex h-full flex-col p-5">
-			<h1 className="text-2xl mb-5 font-bold">beforeInteractive</h1>
+		<PageShell title="beforeInteractive">
 			<div>
 				{' '}
 				{text}
@@ -48,6 +48,6 @@ export default function BeforeInteractive() {
 					</Prism>
 				</div>
 			</div>
-		</div>
+		</PageShell>
 	);
 }
