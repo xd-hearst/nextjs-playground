@@ -19,6 +19,10 @@ export const menuItems = [
 				href: '/scripts-demo/lazy-on-load',
 				title: 'lazyOnLoad',
 			},
+			{
+				href: '/scripts-demo/event-handling',
+				title: 'Script Events',
+			},
 		],
 	},
 ];
