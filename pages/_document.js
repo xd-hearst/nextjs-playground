@@ -4,7 +4,12 @@ class MyDocument extends Document {
 		return (
 			<Html lang="en" className="scroll-smooth">
 				<Head>
-					<link rel="shortcut icon" href="/static/code.svg" />
+					<link
+						rel="icon"
+						href="/static/favicon.svg"
+						sizes="any"
+						type="image/svg+xml"
+					/>
 				</Head>
 				<body>
 					<Main />

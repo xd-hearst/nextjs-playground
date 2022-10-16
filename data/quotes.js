@@ -16,16 +16,12 @@ export const quotes = [
 		by: 'Bill Gates',
 	},
 	{
-		text: 'Software is like entropy: It is difficult to grasp, weighs nothing, and obeys the Second Law of Thermodynamics; i.e., it always increases.',
+		text: 'Software is like entropy: It is difficult to obey the Second Law of Thermodynamics; i.e., it always increases.',
 		by: 'Norman Augustine',
 	},
 	{
 		text: 'Software is a gas; it expands to fill its container.',
 		by: 'Nathan Myhrvold',
-	},
-	{
-		text: "All parts should go together without forcing.  You must remember that the parts you are reassembling were disassembled by you.  Therefore, if you can't get them together again, there must be a reason.  By all means, do not use a hammer.",
-		by: 'IBM Manual, 1925',
 	},
 	{
 		text: "Standards are always out of date.  That's what makes them standards.",
