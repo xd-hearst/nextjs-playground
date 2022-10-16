@@ -17,27 +17,29 @@ import Script from 'next/script';
   </Html>
   `;
 
-export default function BeforeInteractive() {
 	const text = (
-		<>
-			<p className="mb-2">
-				Used for critical scripts. This strategy only works inside _document.js
-				and is designed to load scripts that are needed by the entire site (i.e.
-				the script will load when any page in the application has been loaded
-				server-side).
-			</p>
-			<p className="mb-2">
-				Scripts using this strategy should be placed inside `_document.js`. If
-				placed in a component, the timing and ordering of the script loading is
-				not guaranteed
-			</p>
-			<p className="mb-2">
-				Scripts that you would normally load in the head should use{' '}
-				<code language="markdown">beforeInteractive</code>, such as Polyfills,
-				device detecting script.
-			</p>
-		</>
-	);
+	<>
+		<p className="mb-2">
+			Used for critical scripts. This strategy only works inside _document.js
+			and is designed to load scripts that are needed by the entire site (i.e.
+			the script will load when any page in the application has been loaded
+			server-side).
+		</p>
+		<p className="mb-2">
+			Scripts using this strategy should be placed inside `_document.js`. If
+			placed in a component, the timing and ordering of the script loading is
+			not guaranteed
+		</p>
+		<p className="mb-2">
+			Scripts that you would normally load in the head should use{' '}
+			<code language="markdown">beforeInteractive</code>, such as Polyfills,
+			device detecting script.
+		</p>
+	</>
+);
+
+export default function BeforeInteractive() {
+	
 	return (
 		<PageShell title="beforeInteractive">
 			<div>

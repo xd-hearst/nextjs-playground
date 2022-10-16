@@ -46,13 +46,9 @@ export default function LazyLoadTest() {
 				arcu. Integer eu augue tellus.
 			</p>
 			<Script
-				src="https://connect.facebook.net/en_US/sdk.js"
+				src="https://www.google-analytics.com/analytics.js"
 				strategy="lazyOnload"
 			/>
 		</>
 	);
 }
-
-LazyLoadTest.getLayout = function getLayout(page) {
-	return <>{page}</>;
-};

@@ -9,22 +9,23 @@ const demoCode = `
 	</>
   `;
 
+const text = (
+	<>
+		<p className="mb-2">
+			<code class="language-markdown">afterInteractive</code> strategy are
+			injected client-side. It runs after Next.js hydrates the page and is
+			injected into the bottom of
+			<code class="language-markdown">body</code>. This is the default mode for
+			Next Script.
+		</p>
+		<p className="mb-2">
+			Third party scripts such as ads, google analytics should be good
+			candidates for this strategy
+		</p>
+	</>
+);
+
 export default function AfterInteractive() {
-	const text = (
-		<>
-			<p className="mb-2">
-				<code class="language-markdown">afterInteractive</code> strategy are
-				injected client-side. It runs after Next.js hydrates the page and is
-				injected into the bottom of
-				<code class="language-markdown">body</code>. This is the default mode
-				for Next Script.
-			</p>
-			<p className="mb-2">
-				Third party scripts such as ads, google analytics should be good
-				candidates for this strategy
-			</p>
-		</>
-	);
 	return (
 		<PageShell title="afterInteractive">
 			<div>
