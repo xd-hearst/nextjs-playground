@@ -1,4 +1,4 @@
-![nextjs-playground-logo](https://nextjs-playground-cyan-chi.vercel.app/static/favicon.svg)
+<img alt="next js playground" src="https://nextjs-playground-cyan-chi.vercel.app/static/favicon.svg" width="128" />
 
 # Nextjs Playground
 
