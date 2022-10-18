@@ -1,22 +1,13 @@
 import PageShell from 'components/page-shell';
 
-export default function Home() {
+export default function ScriptDemo() {
 	return (
 		<PageShell title="Next Script Demo">
-			<div className="text-2xl">
-				There are four loading strategies for Next Js.
-			</div>
-			<div>
-				<p>
-					<a>beforeInteractive</a>
-				</p>
-				<p>
-					<a>afterInteractive</a>
-				</p>
-				<p>
-					<a>lazyLoaagd</a>
-				</p>
-			</div>
+			The Next.js Script component, next/script, is an extension of the HTML
+			<code class="language-markdown">script</code> element. It enables
+			developers to set the loading priority of third-party scripts anywhere in
+			their application, outside next/head, saving developer time while
+			improving loading performance.
 		</PageShell>
 	);
 }
