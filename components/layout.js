@@ -5,11 +5,12 @@ import { quotes } from 'data/quotes';
 
 function renderMenu(items) {
 	const router = useRouter();
-	const menuList = items.map(({ href, title, children: subMenus }) => (
+	const menuList = items.map(({ href, title, target, children: subMenus }) => (
 		<MenuItem
 			key={title}
 			title={title}
 			href={href}
+			target={target}
 			isCurrent={router.asPath === href}
 			subMenus={subMenus}
 		/>
@@ -18,11 +19,12 @@ function renderMenu(items) {
 	return <ul className="flex-col min-w-full flex list-none">{menuList}</ul>;
 }
 
-function MenuItem({ title, href, isCurrent, subMenus }) {
+function MenuItem({ title, href, isCurrent, subMenus, target = undefined }) {
 	return (
 		<li className="mx-4 mb-2 rounded-lg">
 			<Link href={href}>
 				<a
+					target={target}
 					className={`flex items-center gap-4 text-sm font-light px-4 py-3 rounded-lg cursor-pointer ${
 						isCurrent && 'bg-slate-500 text-white'
 					}`}

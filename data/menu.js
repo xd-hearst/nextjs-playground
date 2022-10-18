@@ -23,6 +23,11 @@ export const menuItems = [
 				href: '/scripts-demo/event-handling',
 				title: 'Script Events',
 			},
+			{
+				href: 'https://dev.to/this-is-learning/script-loading-performance-and-next-script-20d7',
+				title: 'Dev.to Post on Next Script',
+				target: '_blank',
+			},
 		],
 	},
 ];
